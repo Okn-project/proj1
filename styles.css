@@ -32,6 +32,9 @@ body {
 li {
   list-style: none;
 }
+
+/*navigation styles*/
+
 .main_nav {
   background-color: #222222;
 }
@@ -81,4 +84,56 @@ li {
 }
 .cite_nav_item {
   padding: 18px 0 20px 0;
+}
+
+/*promo styles*/
+.promo {
+  background: #f1e4e6;
+}
+
+.promo_wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.left_column {
+  width: 571px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.right_column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-direction: row;
+  align-content: flex-start;
+}
+
+.the_brand,
+.of_luxerious_fashion {
+  width: 100%;
+  font-family: "Lato";
+  padding-left: 91px;
+}
+
+.the_brand {
+  padding-top: 290px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  text-transform: uppercase;
+}
+
+.of_luxerious_fashion {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38.4px;
+  text-transform: uppercase;
+}
+.colortext {
+  color: #f16d7f;
 }
