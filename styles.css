@@ -1,8 +1,31 @@
+@font-face {
+  font-family: "Lato";
+  src: url("../proj1/fonts/Lato.eot");
+  src: url("../proj1/fonts/Lato.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Lato.woff2") format("woff2"),
+    url("./fonts/Lato.woff") format("woff"),
+    url("./fonts/Lato-Regular.ttf") format("truetype"),
+    url("./fonts/Lato.svg#rex") format("svg");
+}
 * {
   margin: 0;
   padding: 0;
 }
-
 body {
   min-width: 1600px;
+}
+.visually_hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1140px;
+  min-height: 150px;
 }
