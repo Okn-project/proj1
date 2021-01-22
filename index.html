@@ -8,32 +8,38 @@
   </head>
   <body>
     <header class="main_header">
-      <div class="container">
-        <nav class="main_nav">
-          <ul class="user_nav">
-            <li class="user_nav_item">
-              <a href=""><img src="#" alt="" class="logo" /></a>
-            </li>
-            <li class="user_nav_item">
-              <form action="search" method="post">
-                <label for="search"></label>
-                <input type="search" id="search" name="search" />
-              </form>
-            </li>
-          </ul>
-          <ul class="cite_nav">
-            <li class="cite_nav_item">
-              <a href=""><img src="#" alt="" /></a>
-            </li>
-            <li class="cite_nav_item">
-              <a href=""><img src="#" alt="" /></a>
-            </li>
-            <li class="cite_nav_item">
-              <a href=""><img src="#" alt="" /></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="main_nav">
+        <div class="container">
+          <div class="main_nav_wrapper">
+            <a class="logo_link" href="#"
+              ><img
+                width="44"
+                height="38"
+                src="img/logo.svg"
+                alt="logo"
+                class="logo"
+            /></a>
+            <button type="button" class="visually_hidden_search">
+              <img src="img/search.svg" alt="search" width="26" height="26" />
+            </button>
+            <form action="search" method="post" class="visually_hidden_menu">
+              <label for="search"></label>
+              <input type="search" id="search" name="search" />
+            </form>
+            <ul class="cite_nav">
+              <li class="cite_nav_item">
+                <a href="#"><img src="img/menu1.png" alt="menu icon" /></a>
+              </li>
+              <li class="cite_nav_item">
+                <a href="#"><img src="img/menu2.png" alt="menu icon" /></a>
+              </li>
+              <li class="cite_nav_item">
+                <a href="#"><img src="img/menu3.png" alt="menu icon" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
       <h1 class="visually_hidden">fashion shop</h1>

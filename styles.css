@@ -12,7 +12,9 @@
   padding: 0;
 }
 body {
-  min-width: 1600px;
+  margin: 0 auto;
+  padding-top: 50px;
+  width: 1600px;
 }
 .visually_hidden {
   position: absolute;
@@ -23,9 +25,60 @@ body {
   width: 1px;
   overflow: hidden;
 }
-
 .container {
   margin: 0 auto;
   width: 1140px;
-  min-height: 150px;
+}
+li {
+  list-style: none;
+}
+.main_nav {
+  background-color: #222222;
+}
+.main_nav_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.visually_hidden_search {
+  margin-top: 28px;
+  background: none;
+  border: none;
+}
+.visually_hidden_search:hover {
+  cursor: pointer;
+}
+.visually_hidden_search:active,
+.visually_hidden_search:focus-within {
+  outline: none;
+}
+.visually_hidden_menu {
+  align-self: center;
+  visibility: hidden;
+  width: 100px;
+  margin-right: 759px;
+}
+.visually_hidden_menu:active {
+  visibility: visible;
+}
+.visually_hidden_search:focus-within ~ .visually_hidden_menu,
+.visually_hidden_menu:focus-within {
+  visibility: visible;
+}
+.logo_link {
+  padding-top: 18px;
+  padding-bottom: 19px;
+  margin-right: 41px;
+}
+.cite_nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 168px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.cite_nav_item {
+  padding: 18px 0 20px 0;
 }
