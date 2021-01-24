@@ -116,25 +116,19 @@ li {
   font-family: "Lato";
   padding-left: 16px;
   border-left: 12px solid #f16d7f;
+  font-style: normal;
+  text-transform: uppercase;
 }
-
 .the_brand {
   margin-top: 290px;
-  font-family: "Lato";
-  font-style: normal;
   font-weight: 900;
   font-size: 48px;
   line-height: 58px;
-  text-transform: uppercase;
 }
-
 .of_luxerious_fashion {
-  font-family: "Lato";
-  font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 38.4px;
-  text-transform: uppercase;
 }
 .colortext {
   color: #f16d7f;
