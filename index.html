@@ -8,14 +8,14 @@
   </head>
   <body>
     <header class="main_header">
-      <nav class="main_nav">
-        <div class="container">
-          <div class="main_nav_wrapper">
+      <div class="container">
+        <div class="main_header_wrapper">
+          <div class="site_inter">
             <a class="logo_link" href="#"
               ><img
+                src="img/logo.svg"
                 width="44"
                 height="38"
-                src="img/logo.svg"
                 alt="logo"
                 class="logo"
             /></a>
@@ -26,26 +26,20 @@
               <label for="search"></label>
               <input type="search" id="search" name="search" />
             </form>
-            <ul class="cite_nav">
-              <li class="cite_nav_item">
-                <a href="#"><img src="img/menu1.png" alt="menu icon" /></a>
-              </li>
-              <li class="cite_nav_item">
-                <a href="#"><img src="img/menu2.png" alt="menu icon" /></a>
-              </li>
-              <li class="cite_nav_item">
-                <a href="#"><img src="img/menu3.png" alt="menu icon" /></a>
-              </li>
-            </ul>
           </div>
+          <nav class="main_nav">
+            <div class="main_nav_mobile"></div>
+            <button class="main_nav_login" type="button"></button>
+            <button class="main_nav_busket" type="button"></button>
+          </nav>
         </div>
-      </nav>
+      </div>
     </header>
     <main>
-      <h1 class="visually_hidden">fashion shop</h1>
+      <h1 class="visually_hidden upper_case">fashion shop</h1>
       <section class="promo">
         <div class="container">
-          <h2 class="visually_hidden">THE FASHION BRAND</h2>
+          <span class="visually_hidden">the fashion</span>
           <div class="promo_wrapper">
             <div class="left_column">
               <img
@@ -66,10 +60,10 @@
         </div>
       </section>
       <section class="categories">
-        <h2 class="visually_hidden">Categories of goods</h2>
+        <span class="visually_hidden">Categories of goods</span>
         <div class="container">
-          <ul class="categories_list">
-            <li class="category_item">
+          <div class="categories_wrapper">
+            <div class="category_item">
               <img
                 src="img/for-women.jpg"
                 alt="women categories"
@@ -77,11 +71,11 @@
                 height="260"
               />
               <div class="category_item_container">
-                <h3><a href="#">for women </a></h3>
+                <span><a href="#">for women </a></span>
                 <p>30% off</p>
               </div>
-            </li>
-            <li class="category_item">
+            </div>
+            <div class="category_item">
               <img
                 src="img/for-men.jpg"
                 alt="men categories"
@@ -89,11 +83,11 @@
                 height="260"
               />
               <div class="category_item_container">
-                <h3><a href="#">for men</a></h3>
+                <span><a href="#">for men</a></span>
                 <p>hot deal</p>
               </div>
-            </li>
-            <li class="category_item">
+            </div>
+            <div class="category_item">
               <img
                 src="img/for-kids.jpg"
                 alt="kids categories"
@@ -101,11 +95,11 @@
                 height="260"
               />
               <div class="category_item_container">
-                <h3><a href="#">for kids</a></h3>
+                <span><a href="#">for kids</a></span>
                 <p>new arrivals</p>
               </div>
-            </li>
-            <li class="category_item big_category_item">
+            </div>
+            <div class="category_item big_category_item">
               <img
                 src="img/accesories.png"
                 alt="accesories"
@@ -113,77 +107,64 @@
                 height="180"
               />
               <div class="category_item_container">
-                <h3><a href="#">accesories</a></h3>
+                <span><a href="#">accesories</a></span>
                 <p>uxirous & trendy</p>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </section>
-
-      <!-- Part to do
       <section class="featured_items">
         <div class="container">
           <header class="featured_items_header">
-            <h2 class="featured_items">#</h2>
-            <p class="shop_for">
+            <span class="featured_items_title">fetured items</span>
+            <p class="featured_items_p">
               Shop for items based on what we featured in this week
             </p>
           </header>
-          <ul class="features_list">
-            <li class="features_item">
-              <article class="features_article">
-                <h3>#</h3>
-                <img src="#" alt="" />
-                <p></p>
-                <p class="price"></p>
-              </article>
-            </li>
-            <li class="features_item">
-              <article class="features_article">
-                <h3>#</h3>
-                <img src="#" alt="" />
-                <p></p>
-                <p class="price"></p>
-              </article>
-            </li>
-            <li class="features_item">
-              <article class="features_article">
-                <h3>#</h3>
-                <img src="#" alt="" />
-                <p></p>
-                <p class="price"></p>
-              </article>
-            </li>
-            <li class="features_item">
-              <article class="features_article">
-                <h3>#</h3>
-                <img src="#" alt="" />
-                <p></p>
-                <p class="price"></p>
-              </article>
-            </li>
-            <li class="features_item">
-              <article class="features_article">
-                <h3>#</h3>
-                <img src="#" alt="" />
-                <p></p>
-                <p class="price"></p>
-              </article>
-            </li>
-            <li class="features_item">
-              <article class="features_article">
-                <h3>#</h3>
-                <img src="#" alt="" />
-                <p></p>
-                <p class="price"></p>
-              </article>
-            </li>
-          </ul>
+          <div class="featured_items_wrapper">
+            <article class="features_article">
+              <div class="features_article_container">
+                <img src="img/1.png" alt="" />
+              </div>
+              <span>#</span>
+              <p></p>
+              <p class="price"></p>
+            </article>
+            <article class="features_article">
+              <img src="img/2.png" alt="" />
+              <span>#</span>
+              <p></p>
+              <p class="price"></p>
+            </article>
+            <article class="features_article">
+              <img src="img/3.png" alt="" />
+              <span>#</span>
+              <p></p>
+              <p class="price"></p>
+            </article>
+            <article class="features_article">
+              <img src="img/4.png" alt="" />
+              <span>#</span>
+              <p></p>
+              <p class="price"></p>
+            </article>
+            <article class="features_article">
+              <img src="img/5.png" alt="" />
+              <span>#</span>
+              <p></p>
+              <p class="price"></p>
+            </article>
+            <article class="features_article">
+              <img src="img/6.png" alt="" />
+              <span>#</span>
+              <p></p>
+              <p class="price"></p>
+            </article>
+          </div>
           <a href="" class="browse"></a>
         </div>
       </section>
-      -->
     </main>
     <footer></footer>
   </body>
