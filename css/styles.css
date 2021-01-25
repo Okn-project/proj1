@@ -1,5 +1,8 @@
 /*dev*/
-
+.advantage_list_wrapper,
+.advantage_item {
+  outline: 1px solid red;
+}
 
 @font-face {
   font-family: "Lato";
@@ -248,8 +251,8 @@ li {
 }
 /*features styles*/
 
-.featured_items{
-margin-bottom: 95px;
+.featured_items {
+  margin-bottom: 95px;
 }
 
 .featured_items_header {
@@ -282,6 +285,7 @@ margin-bottom: 95px;
   justify-content: space-between;
   width: 100%;
   margin-bottom: 28px;
+  font-family: "Lato";
 }
 
 /*cur*/
@@ -359,8 +363,62 @@ margin-bottom: 95px;
   padding: 15px 39px;
 }
 
-.browse:hover{
-background: #FF6A6A;
-cursor: pointer;
-color: #FFFFFF;
+.browse:hover {
+  background: #ff6a6a;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.advantage_list {
+  background: #222224;
+  margin-bottom: 50px;
+}
+
+.advantage_list_wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 104px 0;
+  font-family: "Lato";
+}
+
+.advantage_item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 360px;
+  text-align: center;
+}
+.icon {
+  width: 45px;
+  height: 32px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+}
+.icon1 {
+  background-image: url(../img/icon1.svg);
+}
+.icon2 {
+  background-image: url(../img/icon2.svg);
+}
+.icon3 {
+  background-image: url(../img/icon3.svg);
+}
+.advantages_h3 {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fbfbfb;
+  margin-bottom: 16px;
+  margin-top: 28px;
+}
+.advantages_p {
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #fbfbfb;
+  font-weight: 300;
 }
