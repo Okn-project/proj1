@@ -1,6 +1,7 @@
 /*dev*/
-.advantage_list_wrapper,
-.advantage_item {
+.subscription_wrapper,
+.subscription_column_1,
+.subscription_column_2 {
   outline: 1px solid red;
 }
 
@@ -288,7 +289,6 @@ li {
   font-family: "Lato";
 }
 
-/*cur*/
 .features_article {
   width: 360px;
   margin-bottom: 30px;
@@ -371,7 +371,6 @@ li {
 
 .advantage_list {
   background: #222224;
-  margin-bottom: 50px;
 }
 
 .advantage_list_wrapper {
@@ -421,4 +420,26 @@ li {
   text-align: center;
   color: #fbfbfb;
   font-weight: 300;
+}
+
+/*  D73C3C */
+.subscription {
+  position: relative;
+}
+.subscription_bgi {
+  position: absolute;
+  object-fit: cover;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+}
+.subscription_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 97px 0 126px 0;
+}
+.subscription_column_1,
+.subscription_column_2 {
+  outline: 1px solid red;
 }
