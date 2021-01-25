@@ -1,11 +1,5 @@
 /*dev*/
-.featured_items_wrapper {
-  outline: 1px solid red;
-  margin-bottom: 50px;
-}
-.features_article {
-  outline: 1px solid red;
-}
+
 
 @font-face {
   font-family: "Lato";
@@ -254,9 +248,12 @@ li {
 }
 /*features styles*/
 
+.featured_items{
+margin-bottom: 95px;
+}
+
 .featured_items_header {
   text-align: center;
-  outline: 1px solid red;
   padding-bottom: 48px;
 }
 
@@ -284,6 +281,7 @@ li {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: 28px;
 }
 
 /*cur*/
@@ -314,4 +312,55 @@ li {
   left: 0;
   top: 0;
   z-index: -1;
+}
+
+.features_article_container_2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 24px 18px 20px 18px;
+  text-align: left;
+}
+
+.features_article_container_2 > span {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.features_article_container_2 > p:first-of-type {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 18px;
+  color: #5d5d5d;
+}
+.price {
+  font-size: 16px;
+  line-height: 19px;
+  color: #f16d7f;
+}
+.browse {
+  display: flex;
+  margin: 0 auto;
+  width: 212px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ff6a6a;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f26376;
+  padding: 15px 39px;
+}
+
+.browse:hover{
+background: #FF6A6A;
+cursor: pointer;
+color: #FFFFFF;
 }
