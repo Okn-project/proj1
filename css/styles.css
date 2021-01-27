@@ -1,9 +1,4 @@
 /*dev*/
-.subscription_wrapper,
-.subscription_column_1,
-.subscription_column_2 {
-  outline: 1px solid blue;
-}
 
 @font-face {
   font-family: "Lato";
@@ -352,7 +347,7 @@ li {
 .browse {
   display: flex;
   margin: 0 auto;
-  width: 212px;
+  width: 134px;
   align-items: center;
   justify-content: center;
   border: 1px solid #ff6a6a;
@@ -426,7 +421,6 @@ li {
   background-image: url(../img/photo_subscribe.png);
   background-color: rgba(244, 244, 244, 0.7);
   background-repeat: no-repeat;
-  outline: 1px solid red;
 }
 
 .subscription_column_1 {
@@ -443,6 +437,7 @@ li {
 }
 .avatar {
   width: fit-content;
+  margin: 0 auto;
 }
 .avatar > img {
   border-radius: 50%;
@@ -457,19 +452,21 @@ li {
   top: 136px;
 }
 
-.subscription_column_2{
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-width: 557px;
-text-align: center;
-font-family: "Lato";
+.subscription_column_2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 557px;
+  text-align: center;
+  font-family: "Lato";
+  margin-top: 53px;
 }
 
-.subscription_column_2_span, form{
-width: 100%;
+.subscription_column_2_span,
+form {
+  width: 100%;
 }
-label{
+label {
   width: 100%;
   display: block;
   color: #222224;
@@ -477,7 +474,7 @@ label{
   margin-bottom: 32px;
 }
 
-.subscription_column_2_span1{
+.subscription_column_2_span1 {
   display: block;
   width: 100%;
   font-size: 24px;
@@ -486,8 +483,7 @@ label{
   text-transform: uppercase;
 }
 
-
-.subscription_column_2_span2{
+.subscription_column_2_span2 {
   display: block;
   width: 100%;
   font-size: 18px;
@@ -496,26 +492,107 @@ label{
   text-transform: uppercase;
 }
 
-form{
-display: flex;
-flex-direction: row;
-width: 100%;
-justify-content: center;
+form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
 }
 
-#email{
-flex-grow: 256;
-background-image: url(../img/Rounded\ Rectangle\ 5.jpg);
-background-repeat: no-repeat;
-background-size: 110%;
-background-position:0 50%;
-font-weight: 400;
-font-size: 14px;
-Line-height: 16,8px;
-padding: 7px 0 7px 22px;
-border: none;
+#email {
+  flex-grow: 256;
+  background-image: url(../img/Rounded\ Rectangle\ 5.jpg);
+  background-repeat: no-repeat;
+  background-size: 110%;
+  background-position: 0 50%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16, 8px;
+  padding: 7px 0 7px 22px;
+  border: none;
+  min-height: 49px;
 }
-.submit{
+.submit {
   flex-grow: 100;
-  background-image: url();
+  background-image: url(../img/submit_bgi.png);
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+#email:focus-within,
+.submit:focus-within {
+  outline: none;
+}
+
+footer {
+  background: #222224;
+}
+.large_container {
+  width: 1135px;
+  margin: 0 auto;
+}
+.footer_wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Lato";
+  min-height: 79px;
+}
+
+.social {
+  display: flex;
+  width: 148px;
+  justify-content: space-between;
+}
+
+.copy {
+  display: block;
+  width: 332px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fbfbfb;
+  text-align: left;
+}
+.social > * {
+  display: block;
+}
+
+.fb {
+  width: 32px;
+  height: 31px;
+  background-image: url(../img/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+}
+.inst {
+  width: 32px;
+  height: 31px;
+  background-image: url(../img/Vector-1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+}
+.pr {
+  width: 32px;
+  height: 31px;
+  background-image: url(../img/Vector-2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+}
+.tw {
+  width: 32px;
+  height: 31px;
+  background-image: url(../img/Vector-3.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
 }
