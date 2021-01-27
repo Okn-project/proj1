@@ -468,6 +468,54 @@ font-family: "Lato";
 
 .subscription_column_2_span, form{
 width: 100%;
-
+}
+label{
+  width: 100%;
+  display: block;
+  color: #222224;
+  text-align: center;
+  margin-bottom: 32px;
 }
 
+.subscription_column_2_span1{
+  display: block;
+  width: 100%;
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+.subscription_column_2_span2{
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+form{
+display: flex;
+flex-direction: row;
+width: 100%;
+justify-content: center;
+}
+
+#email{
+flex-grow: 256;
+background-image: url(../img/Rounded\ Rectangle\ 5.jpg);
+background-repeat: no-repeat;
+background-size: 110%;
+background-position:0 50%;
+font-weight: 400;
+font-size: 14px;
+Line-height: 16,8px;
+padding: 7px 0 7px 22px;
+border: none;
+}
+.submit{
+  flex-grow: 100;
+  background-image: url();
+}
